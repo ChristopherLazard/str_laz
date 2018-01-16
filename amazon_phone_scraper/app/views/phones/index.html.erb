@@ -1,0 +1,19 @@
+<h1>Amazon Cellphones</h1>
+
+<% @phones.each do |phone| %>
+  <div>
+    <image src=<%= phone.image_url %> />
+
+    <h3> 
+      <%= phone.title %>
+    </h3>
+    
+    <strong>
+      <%= phone.price %>
+    </strong>
+
+    <i>
+      <%= phone.stars %>
+    </i>
+  </div>
+<% end %>
